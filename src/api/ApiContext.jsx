@@ -30,7 +30,7 @@ export function ApiProvider({ children }) {
     if (!response.ok) throw Error(result?.message ?? "Something went wrong :(");
     return result;
   };
-
+  
   const [tags, setTags] = useState({});
 
   /** Stores the provided query function for a given tag */
